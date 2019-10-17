@@ -8,12 +8,14 @@ function getLastItemFrom(arr) {
 }
 
 function getIndex3(arr) {
-  // return   arr.splice(5, 2) && arr[3];
-  return arr[3];
+  if (arr.length < 4) {
+    return getLastItemFrom(arr);
+  } 
+  
+   return arr[3];
+  }
   
   
-}
-
 function firstItemIsNumber() {
   return 
 }
